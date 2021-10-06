@@ -37,7 +37,6 @@ function SearchForm(props) {
     superagent.get(`https://www.googleapis.com/books/v1/volumes?q=intitle:${book}`)
     .then((res) => {
       const result = res.body.items
-      console.log(result);
       const booksData = result.map((item) => {
         return item;
       })
@@ -50,7 +49,6 @@ function SearchForm(props) {
     superagent.get(`https://www.googleapis.com/books/v1/volumes?q=inauthor:${book}`)
     .then((res) => {
       const result = res.body.items
-      console.log(result);
       const booksData = result.map((item) => {
         return item;
       })
