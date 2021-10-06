@@ -2,6 +2,8 @@ import React from 'react';
 import { Grid, Typography, TextField, Button } from '@material-ui/core';
 import Header from '../header/header';
 import Background from '../../assets/bImage.jpg';
+import GoogleAuth from '../googleAuth/login';
+import GoogleLogout from '../googleAuth/logout';
 import { useState , useContext } from 'react';
 import  {LoginContext}  from '../../context/authContext';
 import { makeStyles } from '@material-ui/core/styles';
@@ -95,7 +97,11 @@ function SignIn() {
                         </a>
                       
                     </form>
-                    
+                            <p>or sign in using Google</p>
+                    <div style={{display:"flex", marginLeft:"6%",marginTop:"5%" , justifyContent:"space-around"}}>
+                    <GoogleAuth  />
+                    <GoogleLogout/>
+                       </div>
                 </Grid>
                 <Grid xs ></Grid>
             </Grid>
