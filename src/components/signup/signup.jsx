@@ -5,6 +5,7 @@ import Background from '../../assets/bImage.jpg';
 import { LoginContext } from '../../context/authContext';
 import { useState , useContext } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
+import { Link } from "react-router-dom";
 
 function SignUp (){
     const useStyles = makeStyles((theme) => ({
@@ -92,13 +93,13 @@ function SignUp (){
         backgroundColor: "rgb(236, 73, 9)"
                         }}>sign up</Button>
                         </div>
-                        <a href="/signin" 
+                      <Link to="/signin" >  <p 
                          style={{
                             textDecoration: "none",
                             color: "black"
                         }}>
                             {"Already have an account? Sign In"}
-                        </a>
+                        </p> </Link>
                     </form>
                 </Grid>
                 <Grid xs ></Grid>

@@ -1,7 +1,5 @@
 import React from 'react';
-// import {FacebookIcon,GitHubIcon ,TwitterIcon,InstagramIcon  } from '@mui/icons-material';
 import './footer.css'
-// import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
