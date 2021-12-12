@@ -1,7 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './footer.css'
-import TwitterIcon from '@mui/icons-material/Twitter';
-import FacebookIcon from '@mui/icons-material/Facebook';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import GitHubIcon from '@mui/icons-material/GitHub';
 function Footer () {
@@ -13,36 +13,36 @@ function Footer () {
   	 		<div className="footer-col">
   	 			<h4>Book App</h4>
   	 			<ul>
-  	 				<li><a href="#">Home</a></li>
-  	 				<li><a href="#">About Us</a></li>
-  	 				<li><a href="#">Contact Us</a></li>
+  	 			<Link style={{"textDecoration":"none"}} to="/home"><li ><a href="#">Home</a></li></Link>
+  	 			<Link style={{"textDecoration":"none"}} to="/">	<li><a href="#">About Us</a></li> </Link>
+  	 			<Link style={{"textDecoration":"none"}} to="/aboutus">	<li><a href="#">Contact Us</a></li> </Link>
   	 			</ul>
   	 		</div>
   	 		<div className="footer-col">
   	 			<h4>Get Help</h4>
   	 			<ul>
-  	 				<li><a href="#">Order Now</a></li>
-  	 				<li><a href="#">Ask Us</a></li>
+  	 				<li><a href="#">send an email to </a></li>
+  	 				<li><a href="#">the email adress</a></li>
   	 			</ul>
   	 		</div>
   	 		<div className="footer-col">
   	 			<h4>Address</h4>
   	 			<ul>
-  	 				<li><a href="#">
+  	 				<li><a href="#" style={{"textTransform":"lowercase"}}>
                        Amman – Jordan<br/>
-Telephone: +962-6-0000000<br/>
-email: bookApp@jo.org<br/>
-Mailing address: P.O. Box 17101 Amman 11195 Jordan<br/>
+Telephone:<br/> +962-797609288 <br/>
+email: tasnimwheebi@gmail.com<br/>
+<br/>
 </a></li>
   	 			</ul>
   	 		</div>
   	 		<div className="footer-col">
   	 			<h4>follow us</h4>
   	 			<div className="social-links">
-  	 				<a href="#"><GitHubIcon/></a>
-  	 				<a href="#"><TwitterIcon/></a>
-  	 				<a href="#"><FacebookIcon /></a>
-  	 				<a href="#"><InstagramIcon /></a>
+  	 				<a href="https://github.com/Tasnimwheebi"><GitHubIcon/></a>
+  	 				<a href="https://www.linkedin.com/in/tasnim-wheebi/"><LinkedInIcon/></a>
+  	 				<a href="https://www.facebook.com/gloria.k.1690"><FacebookIcon /></a>
+  	 				<a href="https://www.instagram.com/tasnimwheebi/"><InstagramIcon /></a>
   	 			</div>
   	 		</div>
   	 	</div>

@@ -94,15 +94,15 @@ function SignIn() {
                             color: "black"
                         }}
                         >
-                            {"Don't have google account? You Can Sign Up Now "}
+                            {"Don't have an account? You Can Sign Up Now "}
                         </p> </Link>
                       
                     </form>
-                            <p>or sign in using Google</p>
-                    <div style={{display:"flex", marginLeft:"6%",marginTop:"5%" , justifyContent:"space-around"}}>
+                            {/* <p>or sign in using Google</p> */}
+                    {/* <div style={{display:"flex", marginLeft:"6%",marginTop:"5%" , justifyContent:"space-around"}}>
                     <GoogleAuth  />
                     <GoogleLogout/>
-                       </div>
+                       </div> */}
                 </Grid>
                 <Grid xs ></Grid>
             </Grid>
