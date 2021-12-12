@@ -30,7 +30,7 @@ function Footer () {
   	 			<ul>
   	 				<li><a href="#" style={{"textTransform":"lowercase"}}>
                        Amman – Jordan<br/>
-Telephone:<br/> +962-797609288 <br/>
+
 email: tasnimwheebi@gmail.com<br/>
 <br/>
 </a></li>
