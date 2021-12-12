@@ -18,7 +18,7 @@ function LoginProvider(props) {
   const login = async (username, password) => {
     try {
       const encoded = base64.encode(`${username}:${password}`)
-      let url = `https://vybin.herokuapp.com/api/v1/auth/signin`
+      let url = `https://vybin-tasnim.herokuapp.com/api/v1/auth/signin`
       const result = await fetch(
         url,
         {
@@ -59,7 +59,7 @@ function LoginProvider(props) {
 
   const signUp = async function (username, email, password) {
      try {
-      let url = `https://vybin.herokuapp.com/api/v1/auth/register`;
+      let url = `https://vybin-tasnim.herokuapp.com/api/v1/auth/register`;
       let body = { username, email, password};
       let result = await fetch(
         url,

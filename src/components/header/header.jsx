@@ -50,7 +50,7 @@ function Header() {
                     <Grid xs>
                         <Link to="/home"><Button className={classes.button}  >Home</Button></Link>
                         <Link to="/"><Button className={classes.button} >about us</Button></Link>
-                        <Link to="/"><Button  className={classes.button} >contact us</Button></Link>
+                        <Link to="/aboutus"><Button  className={classes.button} >contact us</Button></Link>
                     </Grid>
 
                     <Grid xs className={classes.Auth}>          

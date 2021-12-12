@@ -5,7 +5,7 @@ import { refreshTokenSetup } from './refreshToken';
 import {  useState } from "react";
 
 const clientId =
-  '357204051329-qs437p9pbevptlq3bf423vqfvcjf12hg.apps.googleusercontent.com';
+  '357204051329-ukn6qegd7kladrvbo49s7eldje5e4pq9.apps.googleusercontent.com';
 
 function Login() {
   const [user,setUser] = useState('');

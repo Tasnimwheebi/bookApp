@@ -17,6 +17,7 @@ import SearchIcon from '@mui/icons-material/Search';
 function SearchForm(props) {
     const [book,setBook] = useState([]);
     const [books,setBooks] = useState([]);
+    const [sortA, setSortA]=useState([]);
     const handleInput = (e) => {
       setBook(e.target.value);
   }
@@ -39,6 +40,9 @@ function SearchForm(props) {
       const result = res.body.items
       const booksData = result.map((item) => {
         return item;
+        // const titleSort = item.volumeInfo.title;
+        // setSortA(titleSort.sort());
+        // return item.sort(function(a,b){return a.titleSort-b.titleSort});
       })
       setBooks(booksData);
     })
@@ -51,6 +55,8 @@ function SearchForm(props) {
       const result = res.body.items
       const booksData = result.map((item) => {
         return item;
+        // const authorsArr = item.volumeInfo.authors;
+        // return authorsArr.sort();
       })
       setBooks(booksData);
     })
